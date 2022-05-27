@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100vh;
+    background: conic-gradient(rgba(77, 182, 192, .51), rgb(77, 187, 192), rgb(42, 82, 83));
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: .5rem 10%;
+    height: 15vh;
+    position: fixed;
+    z-index: 10;
+}
+
+nav img {
+    position: relative;
+    width: 15%;
+    height: 12vh;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+nav ul {
+    width: 70%;
+    padding: 0 5rem;
+    position: relative;
+    top: 45%;
+    transform: translateY(-10%);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #e3ad6f;
+    transition: all .3s ease-in-out;
+}
+
+li.active a {
+    color: #e3ad6f;
+}
+
+nav div button {
+    height: 2.8rem;
+    width: 7.5rem;
+    font-size: .9rem;
+    font-weight: 600;
+    color: black;
+    background: #e3ad6f;
+    border: none;
+    border-radius: .2rem;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 1px 1px 1px #1d1d1d;
+}
+
+.navback {
+    background-color: rgb(42, 82, 83);
+    z-index: 1;
+    transition: all .5s ease-in-out;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+}
+
+.content .text {
+    position: relative;
+    top: 32%;
+    transform: translate(0, 32%);
+    float: left;
+    width: 50%;
+}
+
+.text h1 {
+    font-size: 4.5rem;
+    color: white;
+    line-height: 4rem;
+}
+
+.text h1 span {
+    font-size: 5.5rem;
+    color: #e3ad6f;
+    text-shadow: 2px 2px 2px black;
+}
+
+.text p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: .1rem;
+    color: white;
+}
+
+.text p span {
+    color: #9e2e1d;
+}
+
+.text p #home {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.content .image {
+    position: relative;
+    top: 5%;
+    transform: translate(0, 5%);
+    float: right;
+    width: 50%;
+}
+
+.text .home-button {
+    margin-top: 2rem;
+}
+
+.home-button button {
+    height: 2.8rem;
+    width: 8rem;
+    font-size: .9rem;
+    font-weight: 600;
+    color: black;
+    background: #e3ad6f;
+    border: none;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.home-button #first-button {
+    margin-right: 1rem;
+}
+
+.home-button #first-button button {
+    box-shadow: 1px 1px 1px #1d1d1d;
+}
+
+.home-button #second-button button {
+    border: 2px solid #e3ad6f;
+    background: transparent;
+    color: white;
+    box-shadow: 1px 1px 1px #1d1d1d;
+}
+
+.image img {
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+}
+
+.image .med-icons {
+    color: rgb(192, 178, 178);
+}
+
+.image #heartbeat {
+    position: absolute;
+    bottom: 70%;
+    right: 35%;
+    font-size: 3.5rem;
+    text-shadow: 0 0 6px #eeeeee;
+}
+
+.image #file {
+    position: absolute;
+    bottom: 55%;
+    right: 2%;
+    font-size: 3rem;
+    text-shadow: 0 0 6px #eeeeee;
+}
+
+.image #prescription {
+    position: absolute;
+    bottom: 45%;
+    right: 85%;
+    font-size: 3rem;
+    text-shadow: 0 0 6px #eeeeee;
+}
+
+.image #syringe {
+    position: absolute;
+    bottom: 32%;
+    right: 1%;
+    font-size: 3rem;
+    text-shadow: 0 0 6px #eeeeee;
+}
+
+.image #sol {
+    position: absolute;
+    bottom: 62%;
+    right: 88%;
+    font-size: 3rem;
+    text-shadow: 0 0 6px #eeeeee;
+
+}
+
+#my-btn {
+    position: fixed;
+    bottom: 8%;
+    right: 3.4%;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    padding: .7rem;
+    border: none;
+    background-color: rgb(42, 82, 83);
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#my-btn:hover {
+    opacity: .8;
+}
+
+.about {
+    padding: 4rem 0;
+}
+
+.about h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about .line {
+    width: 7%;
+    margin: auto;
+    height: .1rem;
+    background-color: #e3ad6f;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+}
+
+.about p span {
+    font-weight: 600;
+    color: #20ddea;
+}
