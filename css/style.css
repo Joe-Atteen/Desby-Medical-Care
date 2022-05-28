@@ -237,6 +237,7 @@ nav div button {
 
 .about {
     padding: 4rem 0;
+    margin-bottom: 10rem;
 }
 
 .about h2 {
@@ -249,7 +250,7 @@ nav div button {
     margin: auto;
     height: .1rem;
     background-color: #e3ad6f;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .about p {
@@ -261,4 +262,59 @@ nav div button {
 .about p span {
     font-weight: 600;
     color: #20ddea;
+}
+
+.essence {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    padding: 0 5%;
+}
+
+.essence .rep {
+    position: relative;
+    width: 26%;
+    /* border: 1px solid black; */
+}
+
+.essence .rep img {
+    width: 100%;
+    height: 12rem;
+    position: relative;
+}
+
+.essence .rep .text {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    transform: translate(5.6%, -25%);
+    background-color: #ffffff;
+}
+
+.rep .text .div1 {
+    background-color: #9e2e1d;
+    height: .5rem;
+}
+
+.rep .text .div2 {
+    background-color: #e3ad6f;
+    height: .5rem;
+}
+
+.rep .text .div3 {
+    background-color: #20ddea;
+    height: .5rem;
+}
+
+.rep .text h3 {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.rep .text p {
+    color: black;
+    font-size: .95rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    text-align: justify;
 }
