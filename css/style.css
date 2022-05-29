@@ -63,6 +63,7 @@ li.active a {
 }
 
 nav div button {
+    font-family: Poppins, sans-serif;
     height: 2.8rem;
     width: 7.5rem;
     font-size: .9rem;
@@ -76,6 +77,10 @@ nav div button {
     top: 50%;
     transform: translateY(-50%);
     box-shadow: 1px 1px 1px #1d1d1d;
+}
+
+nav div button:hover {
+    background: #f1c592;
 }
 
 .navback {
@@ -99,27 +104,28 @@ nav div button {
     width: 50%;
 }
 
-.text h1 {
+.content .text h1 {
     font-size: 4.5rem;
     color: white;
     line-height: 4rem;
 }
 
-.text h1 span {
+.content .text h1 span {
     font-size: 5.5rem;
     color: #e3ad6f;
     text-shadow: 2px 2px 2px black;
 }
 
-.text p {
+.content .text p {
+    font-family: 'Pacifico', cursive;
     font-size: 1.7rem;
     font-weight: 500;
     margin-top: .1rem;
     color: white;
 }
 
-.text p span {
-    color: #9e2e1d;
+.content .text p span {
+    color: #7c1515;
 }
 
 .text p #home {
@@ -156,65 +162,54 @@ nav div button {
 }
 
 .home-button #first-button button {
+    font-family: Poppins, sans-serif;
     box-shadow: 1px 1px 1px #1d1d1d;
 }
 
+.home-button #first-button button:hover {
+    background: #f1c592;
+}
+
 .home-button #second-button button {
+    font-family: Poppins, sans-serif;
     border: 2px solid #e3ad6f;
     background: transparent;
     color: white;
     box-shadow: 1px 1px 1px #1d1d1d;
 }
 
+.home-button #second-button button:hover {
+    background: #e3ad6f;
+}
+
+.image {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image::before {
+    content: "";
+    background-image: url('../images/bg-img-head.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    filter: invert(9%) sepia(95%) saturate(3670%) hue-rotate(2deg) brightness(94%) contrast(119%);
+    opacity: .125;
+    z-index: -1;
+}
+
 .image img {
     height: 100vh;
     width: 100%;
     z-index: 5;
-}
-
-.image .med-icons {
-    color: rgb(192, 178, 178);
-}
-
-.image #heartbeat {
-    position: absolute;
-    bottom: 70%;
-    right: 35%;
-    font-size: 3.5rem;
-    text-shadow: 0 0 6px #eeeeee;
-}
-
-.image #file {
-    position: absolute;
-    bottom: 55%;
-    right: 2%;
-    font-size: 3rem;
-    text-shadow: 0 0 6px #eeeeee;
-}
-
-.image #prescription {
-    position: absolute;
-    bottom: 45%;
-    right: 85%;
-    font-size: 3rem;
-    text-shadow: 0 0 6px #eeeeee;
-}
-
-.image #syringe {
-    position: absolute;
-    bottom: 32%;
-    right: 1%;
-    font-size: 3rem;
-    text-shadow: 0 0 6px #eeeeee;
-}
-
-.image #sol {
-    position: absolute;
-    bottom: 62%;
-    right: 88%;
-    font-size: 3rem;
-    text-shadow: 0 0 6px #eeeeee;
-
 }
 
 #my-btn {
@@ -236,9 +231,30 @@ nav div button {
 }
 
 .about {
-    padding: 4rem 0;
-    margin-bottom: 10rem;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+    margin-bottom: 5rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
+
+/* .about::before {
+    content: "";
+    background-image: url('../images/about-bg-img.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    margin: auto;
+    height: 100vh;
+    z-index: -10;
+    opacity: .5;
+} */
 
 .about h2 {
     text-align: center;
@@ -274,6 +290,7 @@ nav div button {
 .essence .rep {
     position: relative;
     width: 26%;
+    cursor: pointer;
     /* border: 1px solid black; */
 }
 
@@ -281,10 +298,16 @@ nav div button {
     width: 100%;
     height: 12rem;
     position: relative;
+    transition: transform .2s;
+}
+
+.essence .rep img:hover {
+    transform: scale(1.2);
 }
 
 .essence .rep .text {
     position: absolute;
+    padding-bottom: 2rem;
     width: 90%;
     height: auto;
     transform: translate(5.6%, -25%);
@@ -292,7 +315,7 @@ nav div button {
 }
 
 .rep .text .div1 {
-    background-color: #9e2e1d;
+    background-color: #7c1515;
     height: .5rem;
 }
 
@@ -311,10 +334,86 @@ nav div button {
     padding: 1rem 0;
 }
 
-.rep .text p {
-    color: black;
+.essence .rep .text p {
     font-size: .95rem;
     font-weight: 400;
     line-height: 1.4rem;
     text-align: justify;
+}
+
+#vision:hover {
+    background-color: #7c1515;
+    color: #ffffff;
+}
+
+#mission:hover {
+    background-color: #e3ad6f;
+    color: #7c1515;
+}
+
+#values:hover {
+    background-color: #20ddea;
+}
+
+.services {
+    padding: 6rem 0;
+    background: linear-gradient(rgba(0, 0, 0, .88), rgba(0, 0, 0, .88)), url('../images/services-bg-img.png') center no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.services h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.services .line {
+    width: 9%;
+    margin: auto;
+    height: .1rem;
+    background-color: #e3ad6f;
+    margin-bottom: 2rem;
+}
+
+.sa {
+    padding: 6rem 7rem;
+}
+
+.sa h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sa .line {
+    width: 28%;
+    margin: auto;
+    height: .1rem;
+    background-color: #e3ad6f;
+    margin-bottom: 2rem;
+}
+
+.sa p {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact {
+    padding: 6rem 7rem;
+    background: #000000;
+    color: #ffffff;
+}
+
+.contact h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact .line {
+    width: 15%;
+    margin: auto;
+    height: .1rem;
+    background-color: #e3ad6f;
+    margin-bottom: 2rem;
 }
