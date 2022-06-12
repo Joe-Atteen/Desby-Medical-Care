@@ -51,3 +51,17 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+
+//menu collapse on menu item click
+const menulinks = document.getElementById("menu-link");
+const input = document.getElementById("check");
+
+menulinks.addEventListener("click", menu);
+
+function menu(event) {
+    if (event.target instanceof HTMLAnchorElement) {
+        input.checked = false;
+    }
+}
