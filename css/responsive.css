@@ -1,0 +1,155 @@
+@media screen and (max-width: 768px) {
+    .contact {
+        display: block;
+    }
+
+    nav div button {
+        display: none;
+    }
+
+    nav img {
+        width: 40%;
+        right: 25%;
+    }
+
+    nav ul {
+        position: fixed;
+        z-index: 100;
+        background: black;
+        top: 0;
+        left: 100%;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 2.5rem;
+        max-height: 100vh;
+        width: 70%;
+        border: 1px solid #767676;
+        box-shadow: inset #009688 2px 5px 15px,
+            inset #009688 -2px -5px 15px;
+        transition: all .5s ease-in-out;
+    }
+
+    nav .icon {
+        display: block;
+    }
+
+    ul {
+        display: none;
+    }
+
+    nav ul li {
+        margin: .7rem;
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 2rem;
+        font-size: 1.2rem;
+        font-weight: 420;
+        line-height: 1rem;
+        text-transform: lowercase;
+    }
+
+    nav :checked~ul {
+        left: 40%;
+        background-color: black;
+    }
+
+    .icon {
+        z-index: 11;
+    }
+
+    nav :checked~.icon .line:nth-child(1) {
+        transform: translateY(8px) rotate(225deg);
+    }
+
+    nav :checked~.icon .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-225deg);
+    }
+
+    nav :checked~.icon .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .content .text h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+        text-align: center;
+    }
+
+    .content .text h1 span {
+        font-size: 4.1rem;
+    }
+
+    .content .text p {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -1rem;
+    }
+
+    .text p #homey {
+        font-size: 1.8rem;
+    }
+
+    .content {
+        display: block;
+        width: 100%;
+    }
+
+    .content .text {
+        background: linear-gradient(rgba(77, 187, 192, .25), rgba(77, 187, 192, .25));
+        padding: 10% 0 30%;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 100%;
+        z-index: 1;
+    }
+
+    .text .home-button {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .home-button #first-button {
+        margin-right: .5rem;
+    }
+
+    .content .image {
+        position: absolute;
+        width: 100%;
+        top: 64%;
+        transform: translate(0, -60%);
+    }
+
+    .about-us {
+        padding-top: 5rem;
+    }
+
+    .about-us .line {
+        width: 25%;
+    }
+
+    .about-us p {
+        width: 90%;
+    }
+
+    .essence {
+        display: block;
+    }
+
+    .essence .rep {
+        width: 100%;
+    }
+
+    #rep2,
+    #rep3 {
+        margin-top: 10rem;
+    }
+
+    .app {
+        padding: 6rem 0;
+    }
+}

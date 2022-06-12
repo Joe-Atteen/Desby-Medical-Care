@@ -9,6 +9,29 @@ html {
     scroll-behavior: smooth;
 }
 
+#check {
+    display: none;
+}
+
+nav .icon {
+    position: absolute;
+    display: none;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 200;
+}
+
+nav .icon .line {
+    height: 3px;
+    width: 30px;
+    border-radius: 3px;
+    margin: 5px;
+    background-color: white;
+    transition: .4s;
+}
+
 .header {
     height: 100vh;
     background: conic-gradient(rgba(77, 182, 192, .51), rgb(77, 187, 192), rgb(42, 82, 83));
@@ -63,6 +86,10 @@ nav ul li.active a {
     transition: .3 ease color;
 }
 
+.contact {
+    display: none;
+}
+
 nav div button {
     font-family: Poppins, sans-serif;
     height: 2.8rem;
@@ -86,7 +113,7 @@ nav div button:hover {
 
 .navback {
     background-color: rgb(42, 82, 83);
-    z-index: 1;
+    z-index: 6;
     transition: all .5s ease-in-out;
 }
 
@@ -400,18 +427,18 @@ nav div button:hover {
     text-align: center;
 }
 
-.contact {
+.contact-us {
     padding: 6rem 7rem;
     background: #000000;
     color: #ffffff;
 }
 
-.contact h2 {
+.contact-us h2 {
     text-align: center;
     text-transform: uppercase;
 }
 
-.contact .line {
+.contact-us .line {
     width: 15%;
     margin: auto;
     height: .1rem;
