@@ -16,7 +16,7 @@
         position: fixed;
         z-index: 100;
         background: black;
-        top: -70%;
+        top: -80%;
         flex-direction: column;
         justify-content: start;
         padding-top: 6rem;
@@ -118,7 +118,7 @@
     .content .image {
         position: absolute;
         width: 100%;
-        top: 70%;
+        top: 75%;
         transform: translate(0, -60%);
     }
 
