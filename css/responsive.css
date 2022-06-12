@@ -16,7 +16,7 @@
         position: fixed;
         z-index: 100;
         background: black;
-        top: -80%;
+        top: -100%;
         flex-direction: column;
         justify-content: start;
         padding-top: 6rem;
@@ -95,7 +95,7 @@
     }
 
     .content .text {
-        background: linear-gradient(rgba(77, 187, 192, .25), rgba(77, 187, 192, .25));
+        background: linear-gradient(rgba(77, 187, 192, .1), rgba(77, 187, 192, .9));
         padding: 10% 0 30%;
         position: absolute;
         top: 60%;
@@ -118,7 +118,7 @@
     .content .image {
         position: absolute;
         width: 100%;
-        top: 74%;
+        top: 72%;
         transform: translate(0, -60%);
     }
 
@@ -149,5 +149,25 @@
 
     .app {
         padding: 6rem 0;
+    }
+}
+
+@media screen and (max-width:359px) {
+    .content .text h1 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .content .text h1 span {
+        font-size: 3.5rem;
+    }
+
+    .content .text p {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .text p #homey {
+        font-size: 1.6rem;
     }
 }
