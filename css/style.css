@@ -429,7 +429,7 @@ nav div button:hover {
 
 .contact-us {
     padding: 6rem 7rem;
-    background: #000000;
+    background: linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, .5));
     color: #ffffff;
 }
 
@@ -444,4 +444,123 @@ nav div button:hover {
     height: .1rem;
     background-color: #e3ad6f;
     margin-bottom: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    padding: 5% 0;
+}
+
+.contact-info .contact-text {
+    width: 50%
+}
+
+.contact-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-text p {
+    text-align: justify;
+}
+
+.trad {
+    display: grid;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.trad i {
+    font-size: 1.5rem;
+    margin: .3rem;
+}
+
+.trad a {
+    text-decoration: none;
+}
+
+.trad p {
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: Poppins, sans-serif;
+    transform: translateY(-115%);
+    margin-left: 2.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5% 0;
+}
+
+.socials img {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.contact-info .contact-form {
+    width: 40%;
+    border: 3px solid #20ddea;
+    border-radius: 3px;
+    margin: auto;
+    padding: 1.5rem;
+    background: #ffffff;
+    color: #000000;
+}
+
+.contact-form h2 {
+    margin-bottom: 1rem;
+    color: #7c1515;
+}
+
+.contact-form label {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.contact-form input {
+    width: 100%;
+    height: 2.5rem;
+    background: #f4f4f4;
+    border: none;
+    border-radius: 3px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    background: #f4f4f4;
+    border: none;
+    border-radius: 3px;
+}
+
+.contact-form button {
+    font-family: Poppins, sans-serif;
+    width: 100%;
+    height: 2.5rem;
+    font-size: .9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    background: #e3ad6f;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #f1c592;
+}
+
+footer {
+    background-color: rgb(42, 82, 83);
+    height: 3rem;
+    color: white;
+    text-align: center;
+    padding-top: .7rem;
+    font-weight: 200;
+    text-transform: uppercase;
 }
