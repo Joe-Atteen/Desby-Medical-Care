@@ -81,4 +81,4 @@ function sendEmail() {
     }).then(
         message => alert("Message sent successfully!")
     );
-} jh
+} 

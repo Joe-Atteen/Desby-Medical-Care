@@ -126,10 +126,6 @@
         padding-top: 5rem;
     }
 
-    .about-us .line {
-        width: 25%;
-    }
-
     .about-us p {
         width: 90%;
     }
@@ -150,6 +146,100 @@
     .app {
         padding: 6rem 0;
     }
+
+    .contact-us {
+        padding: 6rem 1rem;
+    }
+
+    .contact-info {
+        display: grid;
+    }
+
+    .contact-info .contact-text {
+        width: 100%
+    }
+
+    .contact-info .contact-form {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1023px) {
+    .contact {
+        display: block;
+    }
+
+    nav div button {
+        display: none;
+    }
+
+    nav img {
+        width: 40%;
+        right: 25%;
+    }
+
+    nav ul {
+        position: fixed;
+        z-index: 100;
+        background: black;
+        top: -100%;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+        max-height: 100vh;
+        width: 100%;
+        border: 2px solid #767676;
+        transition: all .5s ease-in-out;
+    }
+
+    nav .icon {
+        display: block;
+    }
+
+    ul {
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 4rem;
+        text-transform: lowercase;
+    }
+
+    nav :checked~ul {
+        top: 0;
+        background-color: rgb(42, 82, 83);
+    }
+
+    .icon {
+        z-index: 11;
+    }
+
+    nav :checked~.icon .line:nth-child(1) {
+        transform: translateY(8px) rotate(225deg);
+    }
+
+    nav :checked~.icon .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-225deg);
+    }
+
+    nav :checked~.icon .line:nth-child(2) {
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1150px) {
+    nav ul {
+        padding: 0 0;
+    }
 }
 
 @media screen and (max-width:359px) {
@@ -169,5 +259,48 @@
 
     .text p #homey {
         font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:364px) {
+    .trad p {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    footer {
+        font-size: .8rem;
+        padding-top: .9rem;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1100px) {
+    .contact-us {
+        padding: 6rem 1rem;
+    }
+
+    .contact-info .contact-text {
+        width: 49%
+    }
+
+    .contact-info .contact-form {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:768px) {
+    .essence {
+        padding: 0 20%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1100px) {
+    .essence {
+        padding: 0 0;
+    }
+
+    .essence .rep {
+        width: 28%;
     }
 }

@@ -267,23 +267,6 @@ nav div button:hover {
     justify-content: center;
 }
 
-/* .about::before {
-    content: "";
-    background-image: url('../images/about-bg-img.png');
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 40%;
-    margin: auto;
-    height: 100vh;
-    z-index: -10;
-    opacity: .5;
-} */
-
 .about-us h2 {
     text-align: center;
     text-transform: uppercase;
