@@ -370,7 +370,7 @@ nav div button:hover {
     padding: 6rem 0;
     background: linear-gradient(rgba(0, 0, 0, .88), rgba(0, 0, 0, .88)), url('../images/services-bg-img.png') center no-repeat fixed;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .service h2 {
@@ -385,6 +385,67 @@ nav div button:hover {
     height: .1rem;
     background-color: #e3ad6f;
     margin-bottom: 2rem;
+}
+
+.service p {
+    color: #ffffff;
+    text-align: center;
+    padding: 0 .5rem;
+}
+
+.service .cards {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 40vh 40vh;
+    gap: 3rem;
+    margin: 2rem;
+    justify-content: center;
+}
+
+.service .card {
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset #202020 2px 2px 3px 1px, inset #dddbdb -2px -2px 3px 1px;
+}
+
+.card img {
+    width: 60%;
+    height: 20vh;
+    margin: auto;
+    padding: 1rem 1rem;
+}
+
+.card h4 {
+    text-align: center;
+}
+
+#consult {
+    background: #ebc5c5;
+    color: #7c1515;
+}
+
+#pediatric {
+    background: #ffffff;
+}
+
+#geriatry {
+    background: #e1c39f;
+    color: #0d2d6e;
+}
+
+#wellness {
+    background: #bbf1c9;
+    color: #9a10a6;
+}
+
+#healthy {
+    background: #f0e064;
+    color: #067565;
+}
+
+#online {
+    background: #a3cfe7;
+    color: #d79c06;
 }
 
 .app {

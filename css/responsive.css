@@ -236,6 +236,69 @@
     }
 }
 
+@media screen and (min-width:769px) and (max-width:999px) {
+    .content .text h1 {
+        font-size: 4.5rem;
+        line-height: 4rem;
+        text-align: center;
+    }
+
+    .content .text h1 span {
+        font-size: 5.5rem;
+    }
+
+    .content .text p {
+        font-size: 1.7rem;
+        text-align: center;
+        margin-top: .5rem;
+    }
+
+    .text p #homey {
+        font-size: 2.5rem;
+    }
+
+    .content {
+        display: block;
+        width: 100%;
+    }
+
+    .content .text {
+        background: linear-gradient(rgba(77, 187, 192, .1), rgba(77, 187, 192, .9));
+        padding: 10% 0 30%;
+        position: absolute;
+        top: 60%;
+        transform: translate(0, -50%);
+        width: 100%;
+        z-index: 1;
+    }
+
+    .text .home-button {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .home-button #first-button {
+        margin-right: .5rem;
+    }
+
+    .home-button button {
+        height: 3rem;
+        width: 10rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: black;
+    }
+
+    .content .image {
+        position: absolute;
+        width: 100%;
+        top: 72%;
+        transform: translate(0, -60%);
+    }
+}
+
 @media screen and (min-width:1024px) and (max-width:1150px) {
     nav ul {
         padding: 0 0;
@@ -415,5 +478,45 @@
 
     .essence .rep {
         width: 28%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .service .cards {
+        grid-template-columns: 95%;
+        grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1000px) {
+    .service .cards {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 40vh 40vh 40vh;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width:1001px) and (max-width:1230px) {
+    .service .cards {
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 40vh 40vh;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width:1154px) {
+    .content .text p {
+        font-size: 1.2rem;
+    }
+
+    .text p #homey {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width:380px) and (max-width:500px) {
+    .image img {
+        height: 90vh;
     }
 }
