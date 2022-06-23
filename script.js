@@ -74,7 +74,7 @@ function sendEmail() {
         Host: "smtp.elasticemail.com",
         Username: "joeyatteen@gmail.com",
         Password: "DB01DA3B5556CEF9A59EF866E3998FCCDF52",
-        To: "desby20@gmail.com",
+        To: "joeyatteen@gmail.com",
         From: document.getElementById("email").value,
         Subject: "Message from " + document.getElementById("name").value + " via your website",
         Body: "Phone number: " + document.getElementById("phone").value + "<br>" + document.getElementById("message").value
